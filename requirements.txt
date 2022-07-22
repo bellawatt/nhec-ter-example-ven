@@ -16,7 +16,7 @@ Jinja2==3.1.2
 lxml==4.9.1
 MarkupSafe==2.1.1
 multidict==6.0.2
-openleadr==0.5.26
+git+https://github.com/bellawatt/openleadr-python
 pycparser==2.21
 pyOpenSSL==19.1.0
 pytz==2022.1
