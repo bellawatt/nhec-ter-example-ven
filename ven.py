@@ -1,8 +1,13 @@
-from datetime import timedelta, datetime
+from datetime import timedelta
 from openleadr import OpenADRClient
 from random import random
 
 class ExampleVen:
+  """
+  Example VEN based on OpenLeadr. See more docs here: https://openleadr.org/docs/client.html
+
+  Sample Payload Representations can be found here: https://openleadr.org/docs/representations.html
+  """
   def __init__(self, **kwargs):
     self.client = OpenADRClient(**kwargs)
     self.run = self.client.run
@@ -43,7 +48,9 @@ class ExampleVen:
     """
     OpenLeadr will automatically aggregate values here, so we only need
     to pass a measurement. Alternatively, you can pass a list of (datetime, value) tuples
-    to process all of the report at once
+    to process all of the report at once.
+
+    See more here: https://openleadr.org/docs/reporting.html
     """
     return random()
   
