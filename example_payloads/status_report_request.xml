@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<oadr:oadrPayload xmlns:atom="http://www.w3.org/2005/Atom" xmlns:avob="http://oadr.avob.com" xmlns:ei="http://docs.oasis-open.org/ns/energyinterop/201110" xmlns:emix="http://docs.oasis-open.org/ns/emix/2011/06" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:greenbutton="http://naesb.org/espi" xmlns:ns15="http://docs.oasis-open.org/ns/emix/2011/06/siscale" xmlns:ns16="urn:un:unece:uncefact:codelist:standard:5:ISO42173A:2010-04-07" xmlns:oadr="http://openadr.org/oadr-2.0b/2012/07" xmlns:power="http://docs.oasis-open.org/ns/emix/2011/06/power" xmlns:properties="http://openadr.org/oadr-2.0b/2012/07/xmldsig-properties" xmlns:pyld="http://docs.oasis-open.org/ns/energyinterop/201110/payloads" xmlns:strm="urn:ietf:params:xml:ns:icalendar-2.0:stream" xmlns:xcal="urn:ietf:params:xml:ns:icalendar-2.0" xmlns:xmldsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xmldsig11="http://www.w3.org/2009/xmldsig11#">
+    <oadr:oadrSignedObject xmlns:oadr="http://openadr.org/oadr-2.0b/2012/07" xmlns:pyld="http://docs.oasis-open.org/ns/energyinterop/201110/payloads" xmlns:emix="http://docs.oasis-open.org/ns/emix/2011/06" oadr:Id="oadrSignedObject">
+        <oadr:oadrUpdateReport ei:schemaVersion="2.0b" xmlns:ei="http://docs.oasis-open.org/ns/energyinterop/201110">
+            <pyld:requestID>(RANDOM_STRING_SET_BY_THE_VEN)</pyld:requestID>
+            <oadr:oadrReport xmlns:xcal="urn:ietf:params:xml:ns:icalendar-2.0">
+                <xcal:dtstart>
+                    <xcal:date-time>(A_TIMESTAMP_SUPPLIED_BY_VEN)</xcal:date-time>
+                </xcal:dtstart>
+                <strm:intervals xmlns:strm="urn:ietf:params:xml:ns:icalendar-2.0:stream">
+                    <ei:interval>
+                        <xcal:dtstart>
+                            <xcal:date-time>(A_TIMESTAMP_SUPPLIED_BY_VEN)</xcal:date-time>
+                        </xcal:dtstart>
+                        <oadr:oadrReportPayload>
+                            <ei:rID>(REPORT_ID_)</ei:rID>
+                            <oadr:oadrPayloadResourceStatus>
+                                <oadr:oadrOnline>true</oadr:oadrOnline>
+                                <oadr:oadrManualOverride>false</oadr:oadrManualOverride>
+                                <oadr:oadrLoadControlState>
+                                    <oadr:oadrCapacity>
+                                        <oadr:oadrMin>0</oadr:oadrMin>
+                                        <oadr:oadrMax>10</oadr:oadrMax>
+                                        <oadr:oadrCurrent>5</oadr:oadrCurrent>
+                                        <oadr:oadrNormal>8</oadr:oadrNormal>
+                                    </oadr:oadrCapacity>
+                                </oadr:oadrLoadControlState>
+                            </oadr:oadrPayloadResourceStatus>
+                        </oadr:oadrReportPayload>
+                    </ei:interval>
+                </strm:intervals>
+                <ei:eiReportID></ei:eiReportID>
+                <ei:reportRequestID>
+                    (RANDOMLY_GENERATED_BY_THE_VTN_DURING_REPORT_REGISTRATION)
+                </ei:reportRequestID>
+                <ei:reportSpecifierID>(SUPPLIED_BY_VEN)</ei:reportSpecifierID>
+                <ei:reportName>TELEMETRY_STATUS</ei:reportName>
+                <ei:createdDateTime>(A_CURRENT_TIMESTAMP)</ei:createdDateTime>
+            </oadr:oadrReport>
+            <ei:venID>(VEN_ID)</ei:venID>
+        </oadr:oadrUpdateReport>
+    </oadr:oadrSignedObject>
+</oadr:oadrPayload>

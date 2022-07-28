@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<oadr:oadrPayload xmlns:atom="http://www.w3.org/2005/Atom" xmlns:avob="http://oadr.avob.com" xmlns:ei="http://docs.oasis-open.org/ns/energyinterop/201110" xmlns:emix="http://docs.oasis-open.org/ns/emix/2011/06" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:greenbutton="http://naesb.org/espi" xmlns:ns15="http://docs.oasis-open.org/ns/emix/2011/06/siscale" xmlns:ns16="urn:un:unece:uncefact:codelist:standard:5:ISO42173A:2010-04-07" xmlns:oadr="http://openadr.org/oadr-2.0b/2012/07" xmlns:power="http://docs.oasis-open.org/ns/emix/2011/06/power" xmlns:properties="http://openadr.org/oadr-2.0b/2012/07/xmldsig-properties" xmlns:pyld="http://docs.oasis-open.org/ns/energyinterop/201110/payloads" xmlns:strm="urn:ietf:params:xml:ns:icalendar-2.0:stream" xmlns:xcal="urn:ietf:params:xml:ns:icalendar-2.0" xmlns:xmldsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xmldsig11="http://www.w3.org/2009/xmldsig11#">
+  <oadr:oadrSignedObject>
+    <oadr:oadrCreatePartyRegistration ei:schemaVersion="2.0b">
+      <pyld:requestID>(RANDOM_STRING_SET_BY_THE_VEN)</pyld:requestID>
+      <ei:venID>(THE_ID_OF_THE_VEN)</ei:venID>
+      <oadr:oadrProfileName>2.0b</oadr:oadrProfileName>
+      <oadr:oadrTransportName>simpleHttp</oadr:oadrTransportName>
+      <oadr:oadrReportOnly>false</oadr:oadrReportOnly>
+      <oadr:oadrXmlSignature>false</oadr:oadrXmlSignature>
+      <oadr:oadrVenName>(THE_NAME_OF_THE_VEN)</oadr:oadrVenName>
+      <oadr:oadrHttpPullModel>true</oadr:oadrHttpPullModel>
+    </oadr:oadrCreatePartyRegistration>
+  </oadr:oadrSignedObject>
+</oadr:oadrPayload>

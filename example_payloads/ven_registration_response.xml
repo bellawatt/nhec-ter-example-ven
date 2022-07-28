@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<oadr:oadrPayload xmlns:oadr="http://openadr.org/oadr-2.0b/2012/07">
+    <oadr:oadrSignedObject xmlns:oadr="http://openadr.org/oadr-2.0b/2012/07" oadr:Id="oadrSignedObject">
+        <oadr:oadrCreatedPartyRegistration ei:schemaVersion="2.0b" xmlns:ei="http://docs.oasis-open.org/ns/energyinterop/201110">
+            <ei:eiResponse>
+                <ei:responseCode>200</ei:responseCode>
+                <ei:responseDescription>OK</ei:responseDescription>
+                <requestID xmlns="http://docs.oasis-open.org/ns/energyinterop/201110/payloads">(RANDOM_STRING_SET_BY_THE_VEN)</requestID>
+            </ei:eiResponse>
+            <ei:registrationID>(STRING_CREATED_BY_THE_VTN)</ei:registrationID>
+            <ei:venID>(THE_ID_OF_THE_VEN)</ei:venID>
+            <ei:vtnID>(THE_ID_OF_THE_NHEC_VTN)</ei:vtnID>
+            <oadr:oadrProfiles>
+                <oadr:oadrProfile>
+                    <oadr:oadrProfileName>2.0b</oadr:oadrProfileName>
+                    <oadr:oadrTransports>
+                        <oadr:oadrTransport>
+                            <oadr:oadrTransportName>simpleHttp</oadr:oadrTransportName>
+                        </oadr:oadrTransport>
+                    </oadr:oadrTransports>
+                </oadr:oadrProfile>
+            </oadr:oadrProfiles>
+            <oadr:oadrRequestedOadrPollFreq>
+                (THE_POLLING_FREQUENCY_RECOMMENDED_BY_THE_VTN)
+            </oadr:oadrRequestedOadrPollFreq>
+        </oadr:oadrCreatedPartyRegistration>
+    </oadr:oadrSignedObject>
+</oadr:oadrPayload>
