@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<oadr:oadrPayload xmlns:oadr="http://openadr.org/oadr-2.0b/2012/07">
+    <oadr:oadrSignedObject xmlns:oadr="http://openadr.org/oadr-2.0b/2012/07" oadr:Id="oadrSignedObject">
+        <oadr:oadrRegisteredReport ei:schemaVersion="2.0b" xmlns:ei="http://docs.oasis-open.org/ns/energyinterop/201110">
+            <ei:eiResponse>
+                <ei:responseCode>200</ei:responseCode>
+                <ei:responseDescription>OK</ei:responseDescription>
+                <requestID xmlns="http://docs.oasis-open.org/ns/energyinterop/201110/payloads">(THIS_MATCHES_THE_REQUEST_ID_FROM_THE_VEN)</requestID>
+            </ei:eiResponse>
+            <oadr:oadrReportRequest>
+                <ei:reportRequestID>
+                    (RANDOMLY_GENERATED_BY_THE_VTN_AND_MUST_BE_SUPPLIED_WHEN_SENDING_STATUS_REPORTS)
+                </ei:reportRequestID>
+                <ei:reportSpecifier xmlns:xcal="urn:ietf:params:xml:ns:icalendar-2.0">
+                    <ei:reportSpecifierID>TELEMETRY_STATUS</ei:reportSpecifierID>
+                    <xcal:granularity>
+                        <xcal:duration>PT1M</xcal:duration>
+                    </xcal:granularity>
+                    <ei:reportBackDuration>
+                        <xcal:duration>PT1M</xcal:duration>
+                    </ei:reportBackDuration>
+                    <ei:specifierPayload>
+                        <ei:rID>
+                            (AN_ID_FOR_THE_REPORT_RANDOMLY_GENERATED_BY_THE_VEN)
+                        </ei:rID>
+                        <ei:readingType>x-notApplicable</ei:readingType>
+                    </ei:specifierPayload>
+                </ei:reportSpecifier>
+            </oadr:oadrReportRequest>
+            <oadr:oadrReportRequest>
+                <ei:reportRequestID>
+                    (RANDOMLY_GENERATED_BY_THE_VTN_AND_MUST_BE_SUPPLIED_WHEN_SENDING_USAGE_REPORTS)
+                </ei:reportRequestID>
+                <ei:reportSpecifier xmlns:xcal="urn:ietf:params:xml:ns:icalendar-2.0">
+                    <ei:reportSpecifierID>TELEMETRY_USAGE</ei:reportSpecifierID>
+                    <xcal:granularity>
+                        <xcal:duration>PT30M</xcal:duration>
+                    </xcal:granularity>
+                    <ei:reportBackDuration>
+                        <xcal:duration>PT12S</xcal:duration>
+                    </ei:reportBackDuration>
+                    <ei:specifierPayload>
+                        <ei:rID>
+                            (AN_ID_FOR_THE_REPORT_RANDOMLY_GENERATED_BY_THE_VEN)
+                        </ei:rID>
+                        <ei:readingType>Direct Read</ei:readingType>
+                    </ei:specifierPayload>
+                </ei:reportSpecifier>
+            </oadr:oadrReportRequest>
+            <ei:venID>(VEN_ID)</ei:venID>
+        </oadr:oadrRegisteredReport>
+    </oadr:oadrSignedObject>
+</oadr:oadrPayload>

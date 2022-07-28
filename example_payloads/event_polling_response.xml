@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<oadr:oadrPayload xmlns:oadr="http://openadr.org/oadr-2.0b/2012/07">
+    <oadr:oadrSignedObject xmlns:oadr="http://openadr.org/oadr-2.0b/2012/07" oadr:Id="oadrSignedObject">
+        <oadr:oadrDistributeEvent ei:schemaVersion="2.0b" xmlns:ei="http://docs.oasis-open.org/ns/energyinterop/201110">
+            <ei:eiResponse>
+                <ei:responseCode>200</ei:responseCode>
+                <ei:responseDescription>OK</ei:responseDescription>
+                <requestID xmlns="http://docs.oasis-open.org/ns/energyinterop/201110/payloads">None</requestID>
+            </ei:eiResponse>
+            <requestID xmlns="http://docs.oasis-open.org/ns/energyinterop/201110/payloads">(RANDOM_STRING_SET_BY_THE_VEN_</requestID>
+            <ei:vtnID>ter_vtn_1.0</ei:vtnID>
+            <oadr:oadrEvent>
+                <ei:eiEvent>
+                    <ei:eventDescriptor>
+                        <ei:eventID>4bb2604c-4070-4cec-a857-49e4e6a1f34d</ei:eventID>
+                        <ei:modificationNumber>0</ei:modificationNumber>
+                        <ei:modificationDateTime>2022-07-28T03:59:48.946519Z</ei:modificationDateTime>
+                        <ei:priority>0</ei:priority>
+                        <ei:eiMarketContext>
+                            <marketContext xmlns="http://docs.oasis-open.org/ns/emix/2011/06">oadr://unknown.context</marketContext>
+                        </ei:eiMarketContext>
+                        <ei:createdDateTime>2022-07-28T03:59:48.946487Z</ei:createdDateTime>
+                        <ei:eventStatus>completed</ei:eventStatus>
+                        <ei:testEvent>false</ei:testEvent>
+                    </ei:eventDescriptor>
+                    <ei:eiActivePeriod>
+                        <properties xmlns="urn:ietf:params:xml:ns:icalendar-2.0">
+                            <dtstart>
+                                <date-time>2022-07-28T00:00:01.000000Z</date-time>
+                            </dtstart>
+                            <duration>
+                                <duration>PT2H</duration>
+                            </duration>
+                        </properties>
+                        <components xmlns="urn:ietf:params:xml:ns:icalendar-2.0" />
+                    </ei:eiActivePeriod>
+                    <ei:eiEventSignals>
+                        <ei:eiEventSignal>
+                            <strm:intervals xmlns:strm="urn:ietf:params:xml:ns:icalendar-2.0:stream" xmlns:xcal="urn:ietf:params:xml:ns:icalendar-2.0">
+                                <ei:interval>
+                                    <xcal:dtstart>
+                                        <xcal:date-time>2022-07-28T00:00:01.000000Z</xcal:date-time>
+                                    </xcal:dtstart>
+                                    <xcal:duration>
+                                        <xcal:duration>PT1H</xcal:duration>
+                                    </xcal:duration>
+                                    <uid xmlns="urn:ietf:params:xml:ns:icalendar-2.0">
+                                        <text>0</text>
+                                    </uid>
+                                    <ei:signalPayload>
+                                        <ei:payloadFloat>
+                                            <ei:value>23.45</ei:value>
+                                        </ei:payloadFloat>
+                                    </ei:signalPayload>
+                                </ei:interval>
+                                <ei:interval>
+                                    <xcal:dtstart>
+                                        <xcal:date-time>2022-07-28T00:00:02.000000Z</xcal:date-time>
+                                    </xcal:dtstart>
+                                    <xcal:duration>
+                                        <xcal:duration>PT1H</xcal:duration>
+                                    </xcal:duration>
+                                    <uid xmlns="urn:ietf:params:xml:ns:icalendar-2.0">
+                                        <text>1</text>
+                                    </uid>
+                                    <ei:signalPayload>
+                                        <ei:payloadFloat>
+                                            <ei:value>34.56</ei:value>
+                                        </ei:payloadFloat>
+                                    </ei:signalPayload>
+                                </ei:interval>
+                            </strm:intervals>
+                            <ei:signalName>ELECTRICITY_PRICE</ei:signalName>
+                            <ei:signalType>price</ei:signalType>
+                            <ei:signalID>db45227f-7215-4eee-92cf-0e656f628eef</ei:signalID>
+                        </ei:eiEventSignal>
+                    </ei:eiEventSignals>
+                    <ei:eiTarget>
+                        <ei:venID>(VEN_ID)</ei:venID>
+                    </ei:eiTarget>
+                </ei:eiEvent>
+                <oadr:oadrResponseRequired>always</oadr:oadrResponseRequired>
+            </oadr:oadrEvent>
+            <oadr:oadrEvent>
+                <ei:eiEvent>
+                    <ei:eventDescriptor>
+                        <ei:eventID>2f1b9c81-02f6-4301-9db5-a92d6770b76b</ei:eventID>
+                        <ei:modificationNumber>0</ei:modificationNumber>
+                        <ei:modificationDateTime>2022-07-28T04:00:18.931186Z</ei:modificationDateTime>
+                        <ei:priority>0</ei:priority>
+                        <ei:eiMarketContext>
+                            <marketContext xmlns="http://docs.oasis-open.org/ns/emix/2011/06">oadr://unknown.context</marketContext>
+                        </ei:eiMarketContext>
+                        <ei:createdDateTime>2022-07-28T04:00:18.931170Z</ei:createdDateTime>
+                        <ei:eventStatus>completed</ei:eventStatus>
+                        <ei:testEvent>false</ei:testEvent>
+                    </ei:eventDescriptor>
+                    <ei:eiActivePeriod>
+                        <properties xmlns="urn:ietf:params:xml:ns:icalendar-2.0">
+                            <dtstart>
+                                <date-time>2022-07-28T00:00:01.000000Z</date-time>
+                            </dtstart>
+                            <duration>
+                                <duration>PT2H</duration>
+                            </duration>
+                        </properties>
+                        <components xmlns="urn:ietf:params:xml:ns:icalendar-2.0" />
+                    </ei:eiActivePeriod>
+                    <ei:eiEventSignals>
+                        <ei:eiEventSignal>
+                            <strm:intervals xmlns:strm="urn:ietf:params:xml:ns:icalendar-2.0:stream" xmlns:xcal="urn:ietf:params:xml:ns:icalendar-2.0">
+                                <ei:interval>
+                                    <xcal:dtstart>
+                                        <xcal:date-time>2022-07-28T00:00:01.000000Z</xcal:date-time>
+                                    </xcal:dtstart>
+                                    <xcal:duration>
+                                        <xcal:duration>PT1H</xcal:duration>
+                                    </xcal:duration>
+                                    <uid xmlns="urn:ietf:params:xml:ns:icalendar-2.0">
+                                        <text>0</text>
+                                    </uid>
+                                    <ei:signalPayload>
+                                        <ei:payloadFloat>
+                                            <ei:value>23.45</ei:value>
+                                        </ei:payloadFloat>
+                                    </ei:signalPayload>
+                                </ei:interval>
+                                <ei:interval>
+                                    <xcal:dtstart>
+                                        <xcal:date-time>2022-07-28T00:00:02.000000Z</xcal:date-time>
+                                    </xcal:dtstart>
+                                    <xcal:duration>
+                                        <xcal:duration>PT1H</xcal:duration>
+                                    </xcal:duration>
+                                    <uid xmlns="urn:ietf:params:xml:ns:icalendar-2.0">
+                                        <text>1</text>
+                                    </uid>
+                                    <ei:signalPayload>
+                                        <ei:payloadFloat>
+                                            <ei:value>34.56</ei:value>
+                                        </ei:payloadFloat>
+                                    </ei:signalPayload>
+                                </ei:interval>
+                            </strm:intervals>
+                            <ei:signalName>ELECTRICITY_PRICE</ei:signalName>
+                            <ei:signalType>price</ei:signalType>
+                            <ei:signalID>ddb4f116-66bc-4146-8b7b-a3f5e5814f84</ei:signalID>
+                        </ei:eiEventSignal>
+                    </ei:eiEventSignals>
+                    <ei:eiTarget>
+                        <ei:venID>(VEN_ID)</ei:venID>
+                    </ei:eiTarget>
+                </ei:eiEvent>
+                <oadr:oadrResponseRequired>always</oadr:oadrResponseRequired>
+            </oadr:oadrEvent>
+            <oadr:oadrEvent>
+                <ei:eiEvent>
+                    <ei:eventDescriptor>
+                        <ei:eventID>51b23b1f-50a1-4854-917d-b63718e451c9</ei:eventID>
+                        <ei:modificationNumber>0</ei:modificationNumber>
+                        <ei:modificationDateTime>2022-07-28T04:00:48.956353Z</ei:modificationDateTime>
+                        <ei:priority>0</ei:priority>
+                        <ei:eiMarketContext>
+                            <marketContext xmlns="http://docs.oasis-open.org/ns/emix/2011/06">oadr://unknown.context</marketContext>
+                        </ei:eiMarketContext>
+                        <ei:createdDateTime>2022-07-28T04:00:48.956338Z</ei:createdDateTime>
+                        <ei:eventStatus>completed</ei:eventStatus>
+                        <ei:testEvent>false</ei:testEvent>
+                    </ei:eventDescriptor>
+                    <ei:eiActivePeriod>
+                        <properties xmlns="urn:ietf:params:xml:ns:icalendar-2.0">
+                            <dtstart>
+                                <date-time>2022-07-28T00:00:01.000000Z</date-time>
+                            </dtstart>
+                            <duration>
+                                <duration>PT2H</duration>
+                            </duration>
+                        </properties>
+                        <components xmlns="urn:ietf:params:xml:ns:icalendar-2.0" />
+                    </ei:eiActivePeriod>
+                    <ei:eiEventSignals>
+                        <ei:eiEventSignal>
+                            <strm:intervals xmlns:strm="urn:ietf:params:xml:ns:icalendar-2.0:stream" xmlns:xcal="urn:ietf:params:xml:ns:icalendar-2.0">
+                                <ei:interval>
+                                    <xcal:dtstart>
+                                        <xcal:date-time>2022-07-28T00:00:01.000000Z</xcal:date-time>
+                                    </xcal:dtstart>
+                                    <xcal:duration>
+                                        <xcal:duration>PT1H</xcal:duration>
+                                    </xcal:duration>
+                                    <uid xmlns="urn:ietf:params:xml:ns:icalendar-2.0">
+                                        <text>0</text>
+                                    </uid>
+                                    <ei:signalPayload>
+                                        <ei:payloadFloat>
+                                            <ei:value>23.45</ei:value>
+                                        </ei:payloadFloat>
+                                    </ei:signalPayload>
+                                </ei:interval>
+                                <ei:interval>
+                                    <xcal:dtstart>
+                                        <xcal:date-time>2022-07-28T00:00:02.000000Z</xcal:date-time>
+                                    </xcal:dtstart>
+                                    <xcal:duration>
+                                        <xcal:duration>PT1H</xcal:duration>
+                                    </xcal:duration>
+                                    <uid xmlns="urn:ietf:params:xml:ns:icalendar-2.0">
+                                        <text>1</text>
+                                    </uid>
+                                    <ei:signalPayload>
+                                        <ei:payloadFloat>
+                                            <ei:value>34.56</ei:value>
+                                        </ei:payloadFloat>
+                                    </ei:signalPayload>
+                                </ei:interval>
+                            </strm:intervals>
+                            <ei:signalName>ELECTRICITY_PRICE</ei:signalName>
+                            <ei:signalType>price</ei:signalType>
+                            <ei:signalID>9b20b773-f08d-4c38-9cc0-023415f421bd</ei:signalID>
+                        </ei:eiEventSignal>
+                    </ei:eiEventSignals>
+                    <ei:eiTarget>
+                        <ei:venID>(VEN_ID)</ei:venID>
+                    </ei:eiTarget>
+                </ei:eiEvent>
+                <oadr:oadrResponseRequired>always</oadr:oadrResponseRequired>
+            </oadr:oadrEvent>
+        </oadr:oadrDistributeEvent>
+    </oadr:oadrSignedObject>
+</oadr:oadrPayload>
