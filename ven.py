@@ -1,5 +1,6 @@
 from datetime import timedelta
 from openleadr import OpenADRClient
+from openleadr.enums import MEASUREMENTS
 from random import random
 
 class ExampleVen:
@@ -20,6 +21,7 @@ class ExampleVen:
     self.client.add_report(
       callback=self.energy_report,
       report_specifier_id='RealEnergy',
+      measurement=MEASUREMENTS.REAL_ENERGY,
       resource_id='example-device-001',
       sampling_rate=timedelta(hours=1),
     )
@@ -27,6 +29,7 @@ class ExampleVen:
     self.client.add_report(
       callback=self.status_report,
       report_specifier_id='Status',
+      report_name='TELEMETRY_STATUS',
       resource_id='example-device-001',
       sampling_rate=timedelta(seconds=30),
     )
@@ -42,6 +45,8 @@ class ExampleVen:
           print(f'Start: {interval["dtstart"].isoformat()}')
           print(f'Duration: {interval["duration"].seconds}')
           print(f'Price: {interval["signal_payload"]}')
+    
+    return 'optIn'
 
   @staticmethod
   async def energy_report():
