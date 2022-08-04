@@ -1,6 +1,9 @@
 from asyncio import get_event_loop
 from argparse import ArgumentParser
 from ven import ExampleVen
+import openleadr
+import logging
+openleadr.enable_default_logging(level=logging.DEBUG)
 
 VTN_URL = 'http://localhost:8000/auth-token/OpenADR2/Simple/2.0b'
 VEN_ID = 'bellawatt.example.ven.123'
