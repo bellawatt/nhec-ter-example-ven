@@ -494,7 +494,7 @@
                     </ei:interval>
                 </strm:intervals>
                 <ei:reportRequestID>
-                    (AN_ID_FOR_THE_REPORT_RANDOMLY_GENERATED_BY_THE_VEN)
+                    (AN_ID_FOR_THE_REPORT_MATCHING_THE_REPORT_REQUEST_ID_THAT_WAS_SENT_BACK_IN_THE_REPORT_REGISTRATION_RESPONSE_FROM_THE_VTN)
                 </ei:reportRequestID>
                 <ei:reportSpecifierID>TELEMETRY_USAGE</ei:reportSpecifierID>
                 <ei:reportName>TELEMETRY_USAGE</ei:reportName>
