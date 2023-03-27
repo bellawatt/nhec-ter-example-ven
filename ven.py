@@ -1,7 +1,6 @@
 from datetime import timedelta
 from openleadr import OpenADRClient
 from openleadr.enums import MEASUREMENTS
-from random import random
 
 class ExampleVen:
   """
@@ -9,20 +8,20 @@ class ExampleVen:
 
   Sample Payload Representations can be found here: https://openleadr.org/docs/representations.html
   """
-  def __init__(self, **kwargs):
+  def __init__(self, resource_id, **kwargs):
     self.client = OpenADRClient(**kwargs)
     self.run = self.client.run
 
-    self.register_handlers()
+    self.register_handlers(resource_id)
 
-  def register_handlers(self):
+  def register_handlers(self, resource_id):
     self.client.add_handler('on_event', self.handle_event)
 
     self.client.add_report(
       callback=self.energy_report,
       report_specifier_id='RealEnergy',
       measurement=MEASUREMENTS.REAL_ENERGY,
-      resource_id='example-device-001',
+      resource_id=resource_id,
       sampling_rate=timedelta(hours=1),
     )
 
@@ -30,11 +29,11 @@ class ExampleVen:
       callback=self.status_report,
       report_specifier_id='Status',
       report_name='TELEMETRY_STATUS',
-      resource_id='example-device-001',
+      resource_id=resource_id,
       sampling_rate=timedelta(seconds=30),
     )
 
-  
+
   @staticmethod
   async def handle_event(event):
     print('Just received an event!', event)
@@ -45,7 +44,7 @@ class ExampleVen:
           print(f'Start: {interval["dtstart"].isoformat()}')
           print(f'Duration: {interval["duration"].seconds}')
           print(f'Price: {interval["signal_payload"]}')
-    
+
     return 'optIn'
 
   @staticmethod
@@ -58,7 +57,7 @@ class ExampleVen:
     See more here: https://openleadr.org/docs/reporting.html
     """
     return random()
-  
+
   @staticmethod
   async def status_report():
     """
